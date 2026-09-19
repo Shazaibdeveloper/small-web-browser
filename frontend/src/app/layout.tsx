@@ -18,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-neutral-900 antialiased">
+     <body
+  suppressHydrationWarning
+  className="min-h-screen bg-white text-neutral-900 antialiased"
+>
         <BrowserProvider>
           <BrowserChrome />
           <main className="mx-auto max-w-5xl">{children}</main>
